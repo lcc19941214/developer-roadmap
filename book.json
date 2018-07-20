@@ -1,0 +1,13 @@
+{
+  "plugins": [],
+  "pluginsConfig": {
+    "sharing": {
+      "facebook": true,
+      "twitter": false,
+      "google": true,
+      "weibo": true,
+      "instapaper": false,
+      "vk": false
+    }
+  }
+}

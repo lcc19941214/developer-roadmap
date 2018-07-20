@@ -1,0 +1,10 @@
+# system
+/.idea/
+.DS_Store
+
+# npm
+npm-debug.log
+
+# project
+/node_modules/
+.vscode

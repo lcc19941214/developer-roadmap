@@ -30,6 +30,7 @@
 
 * Others
   * [JSON](chapters/1-basics/3-others/180323-json.md)
+  * [正则表达式](chapters/1-basics/3-others/180801-regexp.md)
 
 ## Development
 * [Outline](chapters/2-develop/readme.md)
@@ -38,8 +39,12 @@
   * [模块化机制](chapters/2-develop/2-module/180320-module-mechanism.md)
   * [webpack 打包解析](chapters/2-develop/2-module/180320-webpack-principle.md)
   * [npm](chapters/2-develop/2-module/180320-npm.md)
-* [Tools](chapters/2-develop/3-tools/readme.md)
+* Tools
+  * [常用工具](chapters/2-develop/3-tools/readme.md)
+  * [个人常用的工具分享](chapters/2-develop/3-tools/180802-valuable-tool.md)
+  * [tmux 简要笔记](chapters/2-develop/3-tools/180411-tmux-commands.md)
 * Version Control
+  * [git message format](chapters/2-develop/4-version-control/170302-git-commit-msg.md)
   * [git commands](chapters/2-develop/4-version-control/180320-git-commands.md)
 * Debug
   * [移动端调试方案](chapters/2-develop/5-debug/180323-debug-with-mobile.md)
@@ -47,11 +52,14 @@
 ## 浏览器
 * [Outline](chapters/3-browser/readme.md)
 * 原理
+  * [性能检测：performance对象](chapters/3-browser/1-basics/160315-performance-object-workflow.md)
   * [从输入URL到页面加载完成都发生了什么事情？](chapters/3-browser/1-basics/170309-from-url-to-render.md)
+  * [HTML加载的过程示意图](chapters/3-browser/1-basics/180323-html-load-process.md)
 * WEB 安全
 * 网络通信
 * 性能优化
 * 浏览器兼容
+  * [移动端开发中的一些小笔记](chapters/3-browser/4-optimization/170808-移动端开发小笔记.md)
 * 离线存储
 * Others
 
@@ -63,5 +71,6 @@
 ## 视觉 | 动效
 
 ## 实践总结
+* [161017: 使用node爬取数据并导出到excel](chapters/7-practice/161017-crawl-and-export-to-excel.md)
 * [antd 1.x datepicker 时区问题](chapters/7-practice/180413-datepicker-timezone-offset.md)
 * [babel-transform-runtime 踩坑记录](chapters/7-practice/180514-babel-transform.md)

@@ -15,4 +15,4 @@ check() {
   fi
 }
 
-check();
+check;

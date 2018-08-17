@@ -71,6 +71,7 @@
 ## 视觉 | 动效
 
 ## 实践总结
-* [161017: 使用node爬取数据并导出到excel](chapters/7-practice/161017-crawl-and-export-to-excel.md)
+* [使用node爬取数据并导出到excel](chapters/7-practice/161017-crawl-and-export-to-excel.md)
 * [antd 1.x datepicker 时区问题](chapters/7-practice/180413-datepicker-timezone-offset.md)
 * [babel-transform-runtime 踩坑记录](chapters/7-practice/180514-babel-transform.md)
+* [lodash按需加载注意事项](chapters/7-practice/180817-lodash-webpack-plugin.md)

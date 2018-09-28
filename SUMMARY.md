@@ -6,6 +6,7 @@
 * WEB
   * HTML
   * CSS
+    * [font-face小记](chapters/1-basics/1-web/2-css/180829-font-face.md)
   * JavaScript
     * EcmaScript
       * [this 关键字](chapters/1-basics/1-web/3-js/1-es/180409-this解析.md)
@@ -75,3 +76,4 @@
 * [antd 1.x datepicker 时区问题](chapters/7-practice/180413-datepicker-timezone-offset.md)
 * [babel-transform-runtime 踩坑记录](chapters/7-practice/180514-babel-transform.md)
 * [lodash按需加载注意事项](chapters/7-practice/180817-lodash-webpack-plugin.md)
+* [记一次项目迁移的踩坑记录](chapters/7-practice/180928-migrate-oe-web.md)

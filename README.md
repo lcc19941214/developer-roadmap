@@ -1,8 +1,7 @@
-# Front End Book
+# A Book
 
-记录与前端相关的一些笔记。
+[![blog/achuan.me](https://img.shields.io/badge/blog-achuan.me-yellow.svg)](http://achuan.me/) [![zcool/conantvos](https://img.shields.io/badge/zcool-conantvos-green.svg)](https://www.zcool.com.cn/u/2512020) [![github/lcc19941214](https://img.shields.io/badge/github-lcc19941214-blue.svg)](https://github.com/lcc19941214)
 
-从大学开始，就折腾过自己写的博客网页，也试过用hexo搭建过自己的博客网站[achuan.me](http://achuan.me/)。但是多数情况下还是用OneNote记一些琐碎的东西。
-2018年希望能够整理笔记，开始往有道云笔记迁移，可惜 markdown 兼容太差，并且我一如既往的希望能够使用 [Typora](https://typora.io/) 进行丝滑般的写作体验。又因为一些机缘巧合，决定重新在 gitbook 上零散的记录一些学习的笔记，工作上踩过的坑。
+> To be a better man
 
-**Stay foolish, stay hungry.**
+我写字的地方。

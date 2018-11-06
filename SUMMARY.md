@@ -7,6 +7,7 @@
   * HTML
   * CSS
     * [font-face小记](chapters/1-basics/1-web/2-css/180829-font-face.md)
+    * [Grid 布局简易笔记](chapters/1-basics/1-web/2-css/181106-grid-glimpse.md)
   * JavaScript
     * EcmaScript
       * [this 关键字](chapters/1-basics/1-web/3-js/1-es/180409-this解析.md)
@@ -70,6 +71,12 @@
 * [Outline](chapters/5-libs/readme.md)
 
 ## 视觉 | 动效
+
+## Clients
+* Server Side
+* Android
+* iOS
+  * [How to install .ipa on iPhone?](chapters/8-clients/3-ios/181027-install-ipa.md)
 
 ## 实践总结
 * [使用node爬取数据并导出到excel](chapters/7-practice/161017-crawl-and-export-to-excel.md)

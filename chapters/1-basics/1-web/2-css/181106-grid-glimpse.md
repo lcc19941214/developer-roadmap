@@ -14,7 +14,7 @@
 - `grid-template-areas` 设置具名栅格
 - `repeat` 栅格可配合 repeat 实现快速布局
 
-<iframe width="100%" height="300" src="//jsfiddle.net/cool_conan/j7pyfbv0/3/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<a href="http://jsfiddle.net/cool_conan/j7pyfbv0/3/embedded/result,html,css/" target="_blank">click here to see example</a>
 
 #### Item
 
@@ -27,7 +27,7 @@
 - `grid-column-end` 区域在列的结束位置
 - `span` span 关键字，如果起始和结束位置是具名的，则没有效果；如果 span 后面紧跟一个 number 类型的值，则表示需要横跨几个区域
 
-<iframe width="100%" height="400" src="//jsfiddle.net/cool_conan/jk45b9tx/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<a href="http://jsfiddle.net/cool_conan/jk45b9tx/embedded/result,html,css/" target="_blank">click here to see example</a>
 
 #### Gap
 
@@ -35,7 +35,7 @@
 - `grid-row-gap` 水平方向上的间隙
 - `grid-column-gap`  垂直方向上的间隙
 
-<iframe width="100%" height="300" src="//jsfiddle.net/cool_conan/xszy8g1h/19/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<a href="http://jsfiddle.net/cool_conan/xszy8g1h/19/embedded/result,html,css/" target="_blank">click here to see example</a>
 
 #### 隐式栅格
 
@@ -60,4 +60,4 @@
 - `align-self` 设置栅格区域内，当前格子垂直上的对齐方式
 - `place-self` \*-self 属性的缩写，eg: `place-self: <align-self> <justify-self>`
 
-<iframe width="100%" height="600" src="//jsfiddle.net/cool_conan/w8znp1gL/24/embedded/result,html,js,css" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<a href="http://jsfiddle.net/cool_conan/w8znp1gL/24/embedded/result,html,js,css" target="_blank">click here to see example</a>

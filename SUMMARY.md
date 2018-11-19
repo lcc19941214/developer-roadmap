@@ -13,6 +13,7 @@
       * [this 关键字](chapters/1-basics/1-web/3-js/1-es/180409-this解析.md)
       * [Event Loop](chapters/1-basics/1-web/3-js/1-es/180502-eventloop.md)
       * [隐式转换](chapters/1-basics/1-web/3-js/1-es/180710-隐式转换.md)
+      * [new Date](chapters/1-basics/1-web/3-js/1-es/181119-new-date-params.md)
     * DOM
       * [常用DOM操作](chapters/1-basics/1-web/3-js/2-dom/180323-dom-api.md)
       * [selection api](chapters/1-basics/1-web/3-js/2-dom/180322-selection.md)

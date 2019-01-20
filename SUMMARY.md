@@ -52,32 +52,29 @@
 * Debug
   * [移动端调试方案](chapters/2-develop/5-debug/180323-debug-with-mobile.md)
 
-## 浏览器
-* [Outline](chapters/3-browser/readme.md)
-* 原理
-  * [性能检测：performance对象](chapters/3-browser/1-basics/160315-performance-object-workflow.md)
-  * [从输入URL到页面加载完成都发生了什么事情？](chapters/3-browser/1-basics/170309-from-url-to-render.md)
-  * [HTML加载的过程示意图](chapters/3-browser/1-basics/180323-html-load-process.md)
-* WEB 安全
-* 网络通信
-* 性能优化
-* 浏览器兼容
-  * [移动端开发中的一些小笔记](chapters/3-browser/4-optimization/170808-移动端开发小笔记.md)
-* 离线存储
-* Others
-
-## node
-
 ## 类库框架
 * [Outline](chapters/5-libs/readme.md)
 
-## 视觉 | 动效
-
-## Clients
-* Server Side
+## Platforms
+* Browser
+  * [Outline](chapters/3-browser/readme.md)
+  * 原理
+    * [性能检测：performance对象](chapters/3-browser/1-basics/160315-performance-object-workflow.md)
+    * [从输入URL到页面加载完成都发生了什么事情？](chapters/3-browser/1-basics/170309-from-url-to-render.md)
+    * [HTML加载的过程示意图](chapters/3-browser/1-basics/180323-html-load-process.md)
+  * WEB 安全
+  * 网络通信
+  * 性能优化
+  * 浏览器兼容
+    * [移动端开发中的一些小笔记](chapters/3-browser/4-optimization/170808-移动端开发小笔记.md)
+  * 离线存储
+  * Others
+* NodeJS
 * Android
 * iOS
-  * [How to install .ipa on iPhone?](chapters/8-clients/3-ios/181027-install-ipa.md)
+  * [How to install .ipa on iPhone?](chapters/8-platforms/ios/181027-install-ipa.md)
+
+## 视觉 | 动效
 
 ## 实践总结
 * [使用node爬取数据并导出到excel](chapters/7-practice/161017-crawl-and-export-to-excel.md)

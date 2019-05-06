@@ -130,7 +130,8 @@
 
   * [Mobile Applications](chapters/Front-end/platforms/mobile-applications/README.md)
 
-## [Back End](chapters/Back-end/README.md)
+## Back End
+* [outline](chapters/Back-end/README.md)
 
 ## Clients
 
@@ -144,7 +145,8 @@
 
 * [Servers & terminal](chapters/DevOps/servers&terminal/README.md)
 
-## [UI & UX](chapters/UI&UX/README.md)
+## UI & UX
+* [outline](chapters/UI&UX/README.md)
 
 ## Others
 

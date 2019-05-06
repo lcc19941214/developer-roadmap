@@ -34,6 +34,7 @@
 * Others
   * [JSON](chapters/1-basics/3-others/180323-json.md)
   * [正则表达式](chapters/1-basics/3-others/180801-regexp.md)
+  * [数据结构与算法](https://github.com/lcc19941214/start-algorithms)
 
 ## Development
 * [Outline](chapters/2-develop/readme.md)

@@ -1,7 +1,3 @@
-> 一些知识点的记录
-
-
-
 - [浏览器：从粘贴板获取数据](https://stackoverflow.com/questions/6333814/how-does-the-paste-image-from-clipboard-functionality-work-in-gmail-and-google-c)
 - [js生成截图](https://juejin.im/entry/58b91491570c35006c4f7fdf)
   - html2canvas

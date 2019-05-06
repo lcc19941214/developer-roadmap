@@ -1,0 +1,10 @@
+- Server Side Rendering
+  - React
+    - Next.js
+  - Vue
+    - Nuxt.js
+  - Angular
+    - Universal
+- Static Site Generators
+  - Hexo
+  - GatsbyJS

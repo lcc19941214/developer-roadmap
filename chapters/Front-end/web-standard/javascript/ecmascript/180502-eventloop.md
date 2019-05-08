@@ -245,9 +245,9 @@ tick6
 - 而在 tick1 和 tick4 中定义的 nextTick，会在下一次循环前（tick）执行，所以这时输出了tick2 和 tick5。
 - 同理，因为 nextTickQueue 被清空，会开始执行 microTaskQueue，最后输出 tick3 和 tick6。
 
----
 
-参考文章：
+## 参考文章
+
 - [jobs-and-job-queues](https://tc39.github.io/ecma262/#sec-jobs-and-job-queues)
 - [阮一峰：event loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
 - [how javascript works](http://www.zcfy.cc/article/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-4506.html)

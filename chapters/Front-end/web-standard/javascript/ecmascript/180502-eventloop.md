@@ -14,11 +14,11 @@
 
 ### Macrotask & Microtask
 
-> An event loop has one or more task queues.(task queue is macrotask queue)
-> Each event loop has a microtask queue.
-> task queue = macrotask queue != microtask queue
-> a task may be pushed into macrotask queue,or microtask queue
-> when a task is pushed into a queue(micro/macro),we mean preparing work is finished,so the task can be executed now.
+    - An event loop has one or more task queues.(task queue is macrotask queue)
+    - Each event loop has a microtask queue.
+    - task queue = macrotask queue != microtask queue
+    - a task may be pushed into macrotask queue,or microtask queue
+    - when a task is pushed into a queue(micro/macro),we mean preparing work is finished,so the task can be executed now.
 
 翻译并提炼一下：
 1. macrotask 其实就是 task queue，而microtask 不是任务队列。
@@ -44,7 +44,7 @@ process.nextTick，promise，ObjectObserver，MutationObserver
 - 执行栈中的任务全部执行结束之后，浏览器的事件循环会不停轮询事件队列，如果有准备就绪的回调函数，会取出其中的任务并推入栈中执行，执行结束后出栈
 - 执行渲染操作
 - 检查是否存在 Web worker 任务，如果有，则对其进行处理
-- 重复上述过程，知道执行栈和任务队列都被清空
+- 重复上述过程，直到执行栈和任务队列都被清空
 
 需要注意的是，宏任务出栈时，是一个一个出栈的，只有前一个任务执行完毕，才能执行后一个任务。而微任务出队时，是一队一队出队的，即全部执行完。因此，在处理 micro 队列这一步，会逐个执行队列中的任务并把它出队，直到队列被清空。
 
@@ -115,7 +115,7 @@ Node 的事件循环和浏览器略有一些不一样。如图，Node 的事件�
   - 获取新的 I/O 事件并执行相关回调。基本上除了 close callbacks，定时器任务 和 setImmediate ，poll会执行所有类型的回调
   - 这个阶段的时间会比较长。如果没有其他异步任务要处理（比如到期的定时器），会一直停留在这个阶段，等待 I/O 请求返回结果。
 - **check** 执行 setImmediate 回调
-- **close callbacks* 执行一些 close 事件的回调，比如 `socket.on('close', ...)`
+- **close callbacks** 执行一些 close 事件的回调，比如 `socket.on('close', ...)`
 
 ### 各阶段具体的内容
 
@@ -239,10 +239,11 @@ tick6
 ```
 
 在 Node 当中，同一阶段的代码执行完成后，才会开始执行 nextTickQueue 和 microTaskQueue，之后才是下一个 phase。
-因为上述代码定义的两个 setTimeout 都会在 timers 阶段执行，所以最先输出 1 和 2。
-紧接着会开始执行 nextTickQueue，输出了 tick1 和 tick4。
-而在 tick1 和 tick4 中定义的 nextTick，会在下一次循环前（tick）执行，所以这时输出了tick2 和 tick5。
-同理，因为 nextTickQueue 被清空，会开始执行 microTaskQueue，最后输出 tick3 和 tick6。
+
+- 因为上述代码定义的两个 setTimeout 都会在 timers 阶段执行，所以最先输出 1 和 2。
+- 紧接着会开始执行 nextTickQueue，输出了 tick1 和 tick4。
+- 而在 tick1 和 tick4 中定义的 nextTick，会在下一次循环前（tick）执行，所以这时输出了tick2 和 tick5。
+- 同理，因为 nextTickQueue 被清空，会开始执行 microTaskQueue，最后输出 tick3 和 tick6。
 
 ---
 

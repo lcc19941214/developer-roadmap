@@ -136,6 +136,7 @@
   - [Desktop Applications](chapters/Front-end/platforms/desktop-applications/README.md)
 
   - [Mobile Applications](chapters/Front-end/platforms/mobile-applications/README.md)
+    - [Flutter 在移动端和 Web 端的技术实现](chapters/Front-end/platforms/190620-flutter-dart.md/README.md)
 
 ## Back End
 

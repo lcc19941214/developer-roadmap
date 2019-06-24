@@ -175,7 +175,7 @@
   - [babel-transform-runtime 踩坑记录](chapters/Others/posts/180514-babel-transform.md)
   - [lodash 按需加载注意事项](chapters/Others/posts/180817-lodash-webpack-plugin.md)
   - [记一次项目迁移的踩坑记录](chapters/Others/posts/180928-migrate-oe-web.md)
-
+  - [时区与JS中的Date对象](chapters/Others/posts/190615-timezone-and-date.md)
 - [Tools](chapters/Others/tools/readme.md)
 
   - [个人常用的工具分享](chapters/Others/tools/180802-valuable-tool.md)

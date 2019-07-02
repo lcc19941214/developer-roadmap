@@ -394,10 +394,18 @@ new Date('2019/10/10 00:00:00')
 有没有一劳永逸的办法？有，moment。
 
 
+### 4. 有哪些好用的处理时区与日期的工具库？
 
-### 4. 能不能不要安利 moment 了？
+- [Moment.js](https://momentjs.com/) - Parse, validate, manipulate, and display dates and times in JavaScript
 
-好的，给大家推荐 [dayjs](https://github.com/iamkun/dayjs)
+- [Moment Timezone](https://momentjs.com/timezone/) - Parse and display dates in any timezone
+
+- [DAY.JS](https://github.com/iamkun/dayjs) - A minimalist JavaScript library for modern browsers with a largely Moment.js-compatible API
+
+- [date-fns](https://date-fns.org/) - Modern JavaScript date utility library
+
+- [查看更多](https://blog.bitsrc.io/9-javascript-date-time-libraries-for-2018-12d82f37872d)
+
 
 
 
@@ -414,3 +422,6 @@ new Date('2019/10/10 00:00:00')
 - [GMT vs UTC](https://stackoverflow.com/questions/1612148/gmt-vs-utc-dates)
 
 - [时区大全](http://www.timeofdate.com/)
+
+- [为什么要用毫秒值的形式存储日期时间？](https://www.v2ex.com/t/550865#r_7117086)
+  

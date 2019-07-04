@@ -169,14 +169,14 @@
 ## Others
 
 - Posts
-
   - [使用 node 爬取数据并导出到 excel](chapters/Others/posts/161017-crawl-and-export-to-excel.md)
   - [antd 1.x datepicker 时区问题](chapters/Others/posts/180413-datepicker-timezone-offset.md)
   - [babel-transform-runtime 踩坑记录](chapters/Others/posts/180514-babel-transform.md)
   - [lodash 按需加载注意事项](chapters/Others/posts/180817-lodash-webpack-plugin.md)
   - [记一次项目迁移的踩坑记录](chapters/Others/posts/180928-migrate-oe-web.md)
   - [时区与JS中的Date对象](chapters/Others/posts/190615-timezone-and-date.md)
-- [Tools](chapters/Others/tools/readme.md)
+  - [记一次 vue + ts 开发踩坑](chapters/Others/posts/190119-vue-&-ts.md)
 
+- [Tools](chapters/Others/tools/readme.md)
   - [个人常用的工具分享](chapters/Others/tools/180802-valuable-tool.md)
   - [tmux 简要笔记](chapters/Others/tools/180411-tmux-commands.md)

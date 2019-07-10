@@ -11,43 +11,32 @@
 ## Usage
 
 - 如何生成快照？
-
-- - [第一次测试时，会自动生成](https://jestjs.io/docs/en/snapshot-testing#snapshot-testing-with-jest)
+  - [第一次测试时，会自动生成](https://jestjs.io/docs/en/snapshot-testing#snapshot-testing-with-jest)
 
 - 如何测试？
-
-- - toMatchSnapshot()
+  - `toMatchSnapshot()`
 
 - 怎么更新快照？
-
-- - [仅在你修改了视图后才需要更新 ](https://jestjs.io/docs/en/snapshot-testing#updating-snapshots)[jest -u](https://jestjs.io/docs/en/snapshot-testing#updating-snapshots)
-
+  - [仅在你修改了视图后才需要更新 `jest -u`](https://jestjs.io/docs/en/snapshot-testing#updating-snapshots)
 
 
 ## Tips
 
 1. snapshot 可以快速在已有项目中使用，方便后期的迭代
+    > (It) works well for us since our code base currently contains a large amount of code that is difficult to test for one reason or another.
 
-> (It) works well for us since our code base currently contains a large amount of code that is difficult to test for one reason or another.
+    ​	记住两点：
 
-​	记住两点：
-
-- 初始化时，在测试用例中调用 toMatchSnapshot
-- 修改视图后，使用  jest -u 更新snapshot
-
-
+    - 初始化时，在测试用例中调用 toMatchSnapshot
+    - 修改视图后，使用  jest -u 更新snapshot
 
 2. snapshot只是一个简化测试的辅助手段，而不能作为测试的替代品。
-
-react/vue 组件单测，还需要配合 enzyme，编写简易的交互逻辑，不能全指望snapshot
-
-
+    react/vue 组件单测，还需要配合 enzyme，编写简易的交互逻辑，不能全指望snapshot
 
 3. 缺点
+    > Like any other test, if the initial snapshot passes with bugs, or doesn’t capture the full range of cases, the test won’t adequately cover those behaviors.
 
-> Like any other test, if the initial snapshot passes with bugs, or doesn’t capture the full range of cases, the test won’t adequately cover those behaviors.
-
-snapshot test和普通的测试没有区别，也存在 case 覆盖不全，导致快照对比不完整的情况。
+    snapshot test和普通的测试没有区别，也存在 case 覆盖不全，导致快照对比不完整的情况。
 
 
 

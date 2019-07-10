@@ -104,6 +104,7 @@
   - Pre/Post Processors
 
   - Test
+    - [Jest Snapshot 使用指南](chapters/Front-end/development/test/20190710-Jest-Snapshot-guide.md)
 
   - Type Checkers
 

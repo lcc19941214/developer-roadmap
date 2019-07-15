@@ -96,7 +96,7 @@
   - Architecture
 
   - Build Tools
-    - [如何编写一个 eslint 插件？](chapters/Front-end/development/build-tools/190714-create-eslint-rules.md)
+    - [如何编写一个自定义的 eslint 规则？](chapters/Front-end/development/build-tools/190714-create-eslint-rules.md)
 
   - Debug
 

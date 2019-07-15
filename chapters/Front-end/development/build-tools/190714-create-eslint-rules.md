@@ -1,4 +1,4 @@
-# 如何编写一个 eslint 插件？
+# 如何编写一个自定义的 eslint 规则？
 
 ## 准备
 
@@ -22,7 +22,7 @@
 
 ##### 遍历 AST 节点
 
-参考以下代码：
+一个最简单的 rule 对象，只需要声明一个 create 属性即可。参考以下代码：
 
 ```js
 module.exports = {
@@ -47,9 +47,31 @@ module.exports = {
 
 ```
 
-上述代码中，create 方法返回的对象，就是 AST 节点 “遍历器” 的集合。我们可以直接声明 [estree 中支持的 AST types](https://github.com/estree/estree/blob/mASTer/es2015.md)；同时，eslint 所依赖的 espree，也支持使用类似 css 选择器的 [selector](https://eslint.org/docs/developer-guide/selectors) 强大语法，对 AST types 进行组装。
+上述代码中，create 方法返回的对象，就是 AST 节点 “遍历器” 的集合。
 
-如果对特定代码片段的 AST 结构非常陌生，可以考虑编写一段 demo 代码，使用 espree 进行解析，可以根据得到的 AST 中编写“遍历器”。
+我们可以直接声明 [estree 中支持的 AST types](https://github.com/estree/estree/blob/mASTer/es2015.md)。下面这段代码的作用，就是遍历所有的 return 语句，并执行定义的回调函数。
+
+```js
+{
+    ReturnStatement: function(node) {
+        // at a ReturnStatement node while going down
+    }
+}
+```
+
+同时，eslint 所依赖的 espree，也支持使用类似 css 选择器的 [selector](https://eslint.org/docs/developer-guide/selectors) 语法，对 AST types 进行组装。
+
+下面的代码会遍历 new 语句中的字面量参数。
+
+```js
+{
+    "NewExpression > Literal": function(node) {
+        // at a Literal node in a NewExpression
+    }
+}
+```
+
+如果对特定代码片段的 AST 结构非常陌生，可以考虑编写一段 demo 代码，使用 espree 进行解析，可以根据得到的 AST 来编写“遍历器”。
 
 [context](https://eslint.org/docs/developer-guide/working-with-rules#the-context-object) 相关 api 可以参考官方文档的说明。
 

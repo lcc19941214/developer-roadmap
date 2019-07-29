@@ -106,7 +106,7 @@ git diff	文件名
 > - ^指哪一个父提交
 
 # rebase文件
-git rebase <branch> 移动至指定提交上游
+`git rebase <branch>` 移动至指定提交上游
 - rebase 就是取出当前head的提交记录，"复制"它们，然后把在别的某个地方放下来
 	
 - rebase --continue 执行add添加修改后的冲突文件，然后置于顶部
@@ -124,12 +124,12 @@ git log
 git reflog
 
 # 丢弃修改
-git checkout -- <file>
+`git checkout -- <file>`
 - `--`命令表示丢弃修改，不添加的话，checkout表示切换分支
 - 让这个文件回到最近一次 git commit 或 git add 时的状态
     - 如果修改后没有添加到暂存区，则回退到版本库
     - 如果放到暂存区后，又做了修改，则回退到暂存区内的状态
-- git reset HEAD <file>  把暂存区的修改撤销掉（unstage），重新放回工作区，即取消本次add操作
+- `git reset HEAD <file>`  把暂存区的修改撤销掉（unstage），重新放回工作区，即取消本次add操作
 
 # 删除文件
 git rm 文件删除后可用版本回退，从版本库中获取到最新版本的文件
@@ -157,22 +157,22 @@ git clone
 git branch
 
 ## 创建分支
-git branch <name>
+`git branch <name>`
 	-f	直接让分支指向另一个提交eg : git branch -f master HEAD~3	强制指向某一个提交
 	还可以指定在某个分支的某个提交上新建
 	
 切换分支
-git checkout <name>
+`git checkout <name>`
 	切换到指定的修改版本，同时把head指向切换的版本
 
 创建并切换
-git checkout -b <name>
+`git checkout -b <name>`
 
 合并至当前分支
-git merge <name>
+`git merge <name>`
 
 删除分支
-git branch -d <name>
+`git branch -d <name>`
 
 查看分支合并情况
 git log --graph

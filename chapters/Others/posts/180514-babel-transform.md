@@ -22,7 +22,7 @@ mobile/b.js
 
 ![](/assets/images/2018-07-20-17-18-39.png)
 
-熟悉webpack打包原理的同学都知道，上图报错是因为，webpack不支持在同一个文件中使用Import和module.exports。关于混用这两种方式的讨论，可以查看该issue Cannot assign to read only property 'exports' of object '#<Object>' (mix require and export)
+熟悉webpack打包原理的同学都知道，上图报错是因为，webpack不支持在同一个文件中使用Import和module.exports。关于混用这两种方式的讨论，可以查看该issue Cannot assign to read only property 'exports' of object '#\<Object\>' (mix require and export)
 如果想了解webpack处理模块引入的基本工作原理，可以参考[import、require、export、module.exports 混合使用详解](https://juejin.im/post/5a2e5f0851882575d42f5609)，这里不展开说明。
 
 肯定有人会问，上面libs/index.js中的代码并没有任何地方使用了import呀。这是一个好问题，我们需要深入到.babelrc中看一看：

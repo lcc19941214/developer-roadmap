@@ -374,7 +374,7 @@ DOM 与标记之间几乎是一一对应的关系。
 
 [在MDN中了解什么是页面预解析以及如何对预解析进行优化](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Optimizing_your_pages_for_speculative_parsing)
 
-在传统的浏览器中，HTML 解析器运行于主线程之中，并且在遇到 </script> 标签后会被阻塞，直到脚本从网络中被获取和执行。页面预解析技术是指，当脚本在获取和执行的过程中，浏览器支持提前解析HTML文档。
+在传统的浏览器中，HTML 解析器运行于主线程之中，并且在遇到 `</script>` 标签后会被阻塞，直到脚本从网络中被获取和执行。页面预解析技术是指，当脚本在获取和执行的过程中，浏览器支持提前解析HTML文档。
 
 
 

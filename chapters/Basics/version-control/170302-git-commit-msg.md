@@ -5,7 +5,7 @@
 - **Body** (optional)
 - **Footer** (optional)
 
-```text
+```
 <type>(<scope>): <subject>
 \n
 <body>
@@ -24,7 +24,7 @@
 `type` is used to describe the type of a commit.
 Several commonly used types are provided for consideration:
 
-```text
+```
 - feat: new feature
 - fix: fix bug
 - refactor: modifications other than features or fixes
@@ -49,7 +49,7 @@ Several commonly used types are provided for consideration:
 
 `Body` contains more detailed explanatory text where contents could be wapped to multiple lines.
 
-```text
+```
 feat(font-end): click affix to back to homepage
 
 - add affix component in all detail pages

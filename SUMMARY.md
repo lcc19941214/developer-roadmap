@@ -117,7 +117,6 @@
 
     - Basics
 
-      - [性能检测：performance 对象](chapters/Front-end/platforms/browser/basics/160315-performance-object-workflow.md)
       - [从输入 URL 到页面加载完成都发生了什么事情？](chapters/Front-end/platforms/browser/basics/170309-from-url-to-render.md)
       - [HTML 加载的过程示意图](chapters/Front-end/platforms/browser/basics/180323-html-load-process.md)
       - [为什么读取某些属性，也会导致回流？](chapters/Front-end/platforms/browser/basics/190708-what-cause-reflow.md)
@@ -129,6 +128,9 @@
     - [Cross Origin](chapters/Front-end/platforms/browser/cross-origin/README.md)
 
     - Performance
+
+      - [性能检测：performance 对象](chapters/Front-end/platforms/browser/basics/160315-performance-object-workflow.md)
+      - [性能指标](chapters/Front-end/platforms/browser/others/190924-性能指标.md)
 
     - Others
 

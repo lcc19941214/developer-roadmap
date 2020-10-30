@@ -153,6 +153,7 @@
 
     - [Event Loop](chapters/Back-end/languages/node/190508-node-eventloop.md)
     - [NodeJS 中的进程与线程](chapters/Back-end/languages/node/191211-node-process.md)
+    - [NodeJS 中的 esModule 与 commonJS](chapters/Back-end/languages/node/201030-node-esModule-cmd.md)
 
 ## Clients
 

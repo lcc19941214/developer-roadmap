@@ -132,22 +132,22 @@ xmlhttp.onreadystatechange = function() {
 
 ### XHR 2.0
 
-*   支持设置`timeout`
+* 支持设置`timeout`
 
-    \`\`\`js
-
-    xhr.timeout = 2000; // time in milliseconds
+```javascript
+xhr.timeout = 2000; // time in milliseconds
 
 xhr.onload = function () { // Request finished. Do processing here. };
 
 xhr.ontimeout = function (e) { // XMLHttpRequest timed out. Do something here. };
+```
 
-````
-- 支持使用`FormData`
+* 支持使用`FormData`
 
-- 支持CORS，需要后端配合。
+* 支持CORS，需要后端配合。
     - `withCredentials`
-```js
+
+```javascript
 xhr.withCredentials = true;
 ````
 

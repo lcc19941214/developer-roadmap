@@ -46,8 +46,7 @@ esModule 中无法使用 `require.cache`，而 commonJS 会缓存引入模块的
 
 commonJS 中 `require.cache` 的数据结构如下：
 
-
-```json
+```javascript
 {
   "/esModule-cmd/cmd/env/index.js": {
     "id": ".",
@@ -93,6 +92,6 @@ commonJS 中 `require.cache` 的数据结构如下：
 
 ## 参考
 
-- [Node Modules at War: Why CommonJS and ES Modules Can’t Get Along](https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1)
-- [Modules: Packages](https://nodejs.org/docs/latest-v14.x/api/packages.html)
-- [Modules: ECMAScript modules](https://nodejs.org/docs/latest-v14.x/api/esm.html#esm_modules_ecmascript_modules)
+* [Node Modules at War: Why CommonJS and ES Modules Can’t Get Along](https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1)
+* [Modules: Packages](https://nodejs.org/docs/latest-v14.x/api/packages.html)
+* [Modules: ECMAScript modules](https://nodejs.org/docs/latest-v14.x/api/esm.html#esm\_modules\_ecmascript\_modules)

@@ -1,17 +1,13 @@
-# web font 小记
-
-
+# font-face 小记
 
 ## 简单对比
 
-| Type                 | Ext  | Desc                                     |
-| -------------------- | ---- | ---------------------------------------- |
-| True Type Font       | ttf  | 苹果和微软共同开发。体积较大。应用范围广                     |
-| Open Type Font       | otf  | Adobe和微软共同开发。由ISO组织制定了Open Font Format (off) 标准 |
-| Embedded OpenType    | eot  | 对otf的压缩，但是比ttf文件更大。设计初衷是为了适应移动端          |
+| Type                 | Ext  | Desc                                                |
+| -------------------- | ---- | --------------------------------------------------- |
+| True Type Font       | ttf  | 苹果和微软共同开发。体积较大。应用范围广                                |
+| Open Type Font       | otf  | Adobe和微软共同开发。由ISO组织制定了Open Font Format (off) 标准     |
+| Embedded OpenType    | eot  | 对otf的压缩，但是比ttf文件更大。设计初衷是为了适应移动端                     |
 | Web Open Font Format | woff | Mozilla基金会，Opera Software以及微软主导。体积小，12年开始成为w3c推荐标准。 |
-
-
 
 ## 兼容性
 
@@ -21,7 +17,7 @@
 
 IE支持度不佳。
 
-![](/assets/images/2018-08-29-17-35-52.png)
+![](<../../../../assets/images/2018-08-29-17-35-52 (1).png>)
 
 ### [EOT](https://caniuse.com/#search=eot)
 
@@ -29,9 +25,7 @@ IE支持度不佳。
 
 对于eot的话，没有特殊要求就可以放弃治疗了。
 
-![](/assets/images/2018-08-29-17-36-10.png)
-
-
+![](<../../../../assets/images/2018-08-29-17-36-10 (1).png>)
 
 ### [WOFF](https://caniuse.com/#search=woff)
 
@@ -39,5 +33,4 @@ IE支持度不佳。
 
 低版本安卓和ios兼容情况较差。
 
-
-![](/assets/images/2018-08-29-17-44-17.png)
+![](<../../../../assets/images/2018-08-29-17-44-17 (1).png>)

@@ -1,6 +1,6 @@
-# 移动端调试方案
+# 移动端调试 web
 
-移动端开发浏览器调试的方式很多，可以参考[各种 真机远程调试 方法 汇总](https://github.com/jieyou/remote_inspect_web_on_real_device#%E8%B0%83%E8%AF%95android%E4%B8%8A%E7%9A%84x5%E5%86%85%E6%A0%B8)
+移动端开发浏览器调试的方式很多，可以参考[各种 真机远程调试 方法 汇总](https://github.com/jieyou/remote\_inspect\_web\_on\_real\_device#%E8%B0%83%E8%AF%95android%E4%B8%8A%E7%9A%84x5%E5%86%85%E6%A0%B8)
 
 调试工具包括chrome remote device， safari等。
 
@@ -10,7 +10,7 @@
 
 QQ browser、钉钉、微信中webview的页面一般无法用chrome remote device进行调试。
 
-*不过不是真机调试，算是用Chrome模拟的。*
+_不过不是真机调试，算是用Chrome模拟的。_
 
 ## 2. Mac Safari
 
@@ -28,30 +28,26 @@ mac系统中通过模拟器可以直接进行真机测试，需要安装Xcode，
 
 我在开发过程中遇到过手机（锤子 Smartisan M1/ 小米 Mi 4c）无论如何都没法连接到mac TBS studio的问题。后来发现需要手动安装Android adb工具，让手机为电脑授权。
 
--    下载[Android SDK 命令行工具](https://developer.android.com/studio/index.html?hl=zh-cn)。下载sdk-tools和sdk-platform-tools，并且配置环境变量。
+*   下载[Android SDK 命令行工具](https://developer.android.com/studio/index.html?hl=zh-cn)。下载sdk-tools和sdk-platform-tools，并且配置环境变量。
 
-     ```bash
-     ANDROID_SDK_PATH=/Users/lcc/Android/
-     export ANDROID_SDK_PATH
-     export PATH=$PATH:$ANDROID_SDK_PATH/tools:$ANDROID_SDK_PATH/platform-tools
-     ```
+    ```bash
+    ANDROID_SDK_PATH=/Users/lcc/Android/
+    export ANDROID_SDK_PATH
+    export PATH=$PATH:$ANDROID_SDK_PATH/tools:$ANDROID_SDK_PATH/platform-tools
+    ```
+*   通过usb连接手机后，启动adb的转发服务，也可以自定义端口
 
-- 通过usb连接手机后，启动adb的转发服务，也可以自定义端口
-
-     ```bash
-     adb forward tcp:9988 tcp:9988
-     ```
-
-- 在手机弹出的授权页面上为当前电脑授权，然后在TBS studio里即可正常连接。
+    ```bash
+       adb forward tcp:9988 tcp:9988
+    ```
+* 在手机弹出的授权页面上为当前电脑授权，然后在TBS studio里即可正常连接。
 
 ## 4. 微信web开发者工具
 
-微信自己推出的调试工具，在[微信公众平台](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1455784140)有比较详细的介绍。
+微信自己推出的调试工具，在[微信公众平台](https://mp.weixin.qq.com/wiki?t=resource/res\_main\&id=mp1455784140)有比较详细的介绍。
 
 但是仅适用于能够安装TBS内核的手机。我使用锤子M1手机开发时遇到过无法安装TBS内核的问题。TBS的安装也是一个大坑，建议还是使用腾讯的TBS Studio调试微信。
 
-
-
 ## 移动端调试工具
 
-- [v-console](http://libraries.io/github/WechatFE/vConsole) 微信团队实现的工具库，在手机端模拟console的信息控制，可以方便的打印调试信息。但是一些代码错误有时候会捕捉不到。
+* [v-console](http://libraries.io/github/WechatFE/vConsole) 微信团队实现的工具库，在手机端模拟console的信息控制，可以方便的打印调试信息。但是一些代码错误有时候会捕捉不到。

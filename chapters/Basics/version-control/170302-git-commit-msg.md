@@ -1,9 +1,10 @@
-# Writing advice on commit message
+# git message format
 
-### Format
-- **Header** (required)
-- **Body** (optional)
-- **Footer** (optional)
+## Format
+
+* **Header** (required)
+* **Body** (optional)
+* **Footer** (optional)
 
 ```
 <type>(<scope>): <subject>
@@ -13,16 +14,13 @@
 <footer>
 ```
 
-
-
-#### Header
+### Header
 
 `Header` should contain **type**(required), **scope**(optional) and **subject**(required) in one line.
 
-##### 1. type
+#### 1. type
 
-`type` is used to describe the type of a commit.
-Several commonly used types are provided for consideration:
+`type` is used to describe the type of a commit. Several commonly used types are provided for consideration:
 
 ```
 - feat: new feature
@@ -34,18 +32,18 @@ Several commonly used types are provided for consideration:
 - docs: write documentation(e.g. README.md)
 ```
 
-##### 2. scope
+#### 2. scope
+
 `scope` describes the scope of a commit, such as view layer, data layer, etc.
 
-##### 3. subject
+#### 3. subject
+
 `subject` is a brief description of a commit and it's suggested to be limited in 50 characters.
 
-    - start with a verb
-    - end without a period
+* start with a verb
+* end without a period
 
-
-
-#### Body
+### Body
 
 `Body` contains more detailed explanatory text where contents could be wapped to multiple lines.
 
@@ -56,18 +54,15 @@ feat(font-end): click affix to back to homepage
 - add css styles for user interface
 ```
 
-
-
-#### Footer
+### Footer
 
 `Footer` is an uncommon part. When some **breaking changes** are added to a commit, it's mainly used to append descriptions, reasons and methods of migration
 
+## Appendix
 
-
-### Appendix
 Below is some commits from Lark/pc-client repository:
 
-```vim
+```
 commit xxxxxx
 Author: xxx <xxx@abc.com>
 Date:   Tue Feb 21 18:47:17 2017 +0800
@@ -109,8 +104,7 @@ Date:   Tue Feb 28 11:07:25 2017 +0800
     Change-Id: xxxxxx
 ```
 
+## Reference
 
-
-### Reference
-- [《Commit message 和 Change log 编写指南》（阮一峰）](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
-- [5 Useful Tips For A Better Commit Message](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message)
+* [《Commit message 和 Change log 编写指南》（阮一峰）](http://www.ruanyifeng.com/blog/2016/01/commit\_message\_change\_log.html)
+* [5 Useful Tips For A Better Commit Message](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message)

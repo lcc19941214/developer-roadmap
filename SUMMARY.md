@@ -112,6 +112,7 @@
     - [Jest Snapshot 使用指南](chapters/Front-end/development/test/20190710-Jest-Snapshot-guide.md)
 
   - Type Checkers
+    - [TS 中 enum 的编译结果](chapters/Front-end/development/test/220221-enum-result.md)
 
 - [Libs & frameworks](chapters/Front-end/libs&frameworks/README.md)
 

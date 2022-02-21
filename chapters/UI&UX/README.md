@@ -1,23 +1,21 @@
-### UI
+# outline
 
-- Devices Size
-- Font
+## UI
 
-	- Basic
-	- Web Fonts
+* Devices Size
+* Font
+  * Basic
+  * Web Fonts
+* Color
+* Layout
+  * Chinese
+* Responsive Design
 
-- Color
-- Layout
+## Animation
 
-	- Chinese
+* Common Animation Types
+* Relative Math & Physical Knowledgements
 
-- Responsive Design
+## Graphs & Images
 
-### Animation
-
-- Common Animation Types
-- Relative Math & Physical Knowledgements
-
-### Graphs & Images
-
-- Format
+* Format

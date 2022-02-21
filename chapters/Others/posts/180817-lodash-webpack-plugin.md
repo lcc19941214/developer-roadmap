@@ -1,4 +1,4 @@
-# lodash按需加载注意事项
+# lodash 按需加载注意事项
 
 大家引用lodash的时候，如果想要按需加载，可以考虑使用[webpack-lodash-plugin](https://github.com/lodash/lodash-webpack-plugin#readme)和[babel-plugin-lodash](https://github.com/lodash/babel-plugin-lodash)
 
@@ -17,10 +17,10 @@ import { isElement, debounce } from 'lodash'
 
 最常见的是，某些支持迭代器的方法，只使用shorthand写法非显示调用。按需加载不会加载shorthand的函数。
 
-![](/assets/images/2018-08-17-14-42-07.png)
+![](<../../../assets/images/2018-08-17-14-42-07 (1).png>)
 
 类似上面这种，按需加载引用`groupBy`时，不会默认加载`property`方法。
 
 配置时可以考虑是否于鏊使用对应的配置。具体可以参考文档设置配置。
 
-![](/assets/images/2018-09-28-14-38-28.png)
+![](<../../../assets/images/2018-09-28-14-38-28 (1).png>)

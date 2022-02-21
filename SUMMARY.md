@@ -112,7 +112,7 @@
     - [Jest Snapshot 使用指南](chapters/Front-end/development/test/20190710-Jest-Snapshot-guide.md)
 
   - Type Checkers
-    - [TS 中 enum 的编译结果](chapters/Front-end/development/test/220221-enum-result.md)
+    - [TS 中 enum 的编译结果](chapters/Front-end/development/type-checkers/220221-enum-result.md)
 
 - [Libs & frameworks](chapters/Front-end/libs&frameworks/README.md)
 
@@ -125,6 +125,7 @@
       - [从输入 URL 到页面加载完成都发生了什么事情？](chapters/Front-end/platforms/browser/basics/170309-from-url-to-render.md)
       - [HTML 加载的过程示意图](chapters/Front-end/platforms/browser/basics/180323-html-load-process.md)
       - [为什么读取某些属性，也会导致回流？](chapters/Front-end/platforms/browser/basics/190708-what-cause-reflow.md)
+      - [Chrome 进程模型](chapters/Front-end/platforms/browser/basics/210412-chrome-process.md)
 
     - [PWA](chapters/Front-end/platforms/browser/PWA/README.md)
 

@@ -6,7 +6,7 @@
 
 后来发现了这样一个网站 [shadowsocks.org/](https://shadowsocks.org)，提供了多种客户端工具的下载，也就是说，这些工具都只是 ss 的协议。
 
-![](<../../assets/images/2018-10-27-11-37-58 (1).png>)
+![](/assets/images/2018-10-27-11-37-58.png)
 
 iOS 端赫然在列啊！ 经过实验， `wingy` 在大陆区已经无法下载了。据说可以通过切换 iCloud 账号实现下载并使用。
 
@@ -14,7 +14,7 @@ iOS 端赫然在列啊！ 经过实验， `wingy` 在大陆区已经无法下载
 
 作为一个程序员，有了源码地址意味着什么？你懂的，再不济咱们可以自己编译一个.ipa啊！很幸运的是，outline-client 的作者定期发布了编译好的版本。
 
-![](<../../assets/images/2018-10-27-11-43-26 (1).png>)
+![](/assets/images/2018-10-27-11-43-26.png)
 
 也就是说，现在的问题变成了，如何在手机上安装 ipa 文件？因为我用的是 Mac，而且个人很不喜欢用各种所谓的手机助手，所以这里不考虑XX助手等方式。
 
@@ -37,7 +37,7 @@ If you previously used iTunes to sync apps or ringtones to your iOS device, use 
 
 ## 使用 Apple configurator 2 安卓 .ipa (mac only)
 
-![](<../../assets/images/2018-10-27-12-01-56 (1).png>)
+![](/assets/images/2018-10-27-12-01-56.png)
 
 官方亲儿子，直接看[官方支持文档](https://support.apple.com/apple-configurator)吧，方法不赘述。 不过比较坑的是，apple 刚刚更新了 10.14 版本的 macOS， Apple configurator 2 要求必须是 > 10.14才能从 app store 安装.
 
@@ -45,10 +45,10 @@ If you previously used iTunes to sync apps or ringtones to your iOS device, use 
 
 一个神奇的网站 [diawi.com](https://www.diawi.com)。
 
-![](<../../assets/images/2018-10-27-12-05-08 (1).png>)
+![](/assets/images/2018-10-27-12-05-08.png)
 
 支持上传 .ipa 文件并生成下载链接，只需要通过 safari 访问即可下载。建议注册一个免费账号进行使用。
 
-![](<../../assets/images/2018-10-27-12-05-34 (1).png>)
+![](/assets/images/2018-10-27-12-05-34.png)
 
 ## 使用 xcode 安装 .ipa

@@ -1,6 +1,6 @@
 # 性能检测：performance 对象
 
-![](<../../../../../assets/images/2018-07-20-17-41-14 (2).png>)
+![](/assets/images/2018-07-20-17-41-14.png)
 
 ## `Performance`对象
 
@@ -146,9 +146,9 @@ Patrick Sexton在["What is domContentLoaded?"](https://varvy.com/performance/dom
 
 那这里的样式表有可能阻塞哪里的js代码呢？
 
-这里就需要说说script标签了。参考规范对 [The script element](https://www.w3.org/TR/html5/semantics-scripting.html#list-of-scripts-that-will-execute-when-the-document-has-finished-parsing) 标签的定义，满足下图条件的script标签（主要就是defer脚本中的js代码），浏览器会把其中的代码放到一个叫做`list of scripts that will execute when the document has finished parsing`的队列当中。
+这里就需要说说 script 标签了。参考规范对 [The script element](https://www.w3.org/TR/html5/semantics-scripting.html#list-of-scripts-that-will-execute-when-the-document-has-finished-parsing) 标签的定义，满足下图条件的script标签（主要就是defer脚本中的js代码），浏览器会把其中的代码放到一个叫做`list of scripts that will execute when the document has finished parsing`的队列当中。
 
-![](<../../../../../assets/images/2018-07-27-13-39-50 (1).png>)
+![](/assets/images/2018-07-27-13-39-50.png)
 
 根据事件循环的模型，我们知道 parser 解析 HTML 过程中的 js 代码都是同步执行的，异步执行的代码（ajax请求、定时器等）会被放进事件队列。当 HTML 解析结束后，事件循环会检查事件队列中是否有需要执行的代码，如果有就会开始执行。parser 解析完成后，浏览器会执行一个类似的操作。结合规范中 `Parsing HTML document` 过程对 `the end` 环节中一个步骤的定义：
 

@@ -43,7 +43,7 @@ Chromium里有三种进程——浏览器、渲染器和插件。
 
 > 我看了一下Chrome的任务管理器，发现现在Chrome可以启动不止20个进程，大概是因为现在的计算机性能比当时强很多，所以可以吃更多资源。
 
-![](../../../../../assets/images/2021-04-12-16-50-52.png)
+![](/assets/images/2021-04-12-16-50-52.png)
 
 根据\[这篇文章]\(https://www.chromium.org/developers/design-documents/process-models​www.chromium.org，Chromium实际支持多种进程模型。
 

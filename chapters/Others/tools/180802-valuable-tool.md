@@ -6,7 +6,7 @@
 
 *   [add-gitignore](https://github.com/TejasQ/add-gitignore#usage) 一键生成 .gitignore 文件，可配合 [gitignore](https://github.com/dvcs/gitignore) 使用
 
-    ![](<../../../assets/images/2018-08-02-15-04-55 (1).gif>)
+    ![](/assets/images/2018-08-02-15-04-55.gif)
 *   [cnpm](https://npm.taobao.org)
 
     这东西是啥就不用多说了，用过的都说好，速度杠杠的。
@@ -23,7 +23,7 @@
     不过npm 更新到5.0之后感觉 yarn 速度上的优势不是特别明显了。
 *   [http-server](https://www.npmjs.com/package/http-server) 顾名思义，在本地开启一个简单的http server。
 
-    ![](<../../../assets/images/2018-08-02-15-10-09 (1).png>)
+    ![](/assets/images/2018-08-02-15-10-09.png)
 *   [nodemon](https://github.com/remy/nodemon)
 
     实时 watch 文件变动并重启 node 服务。可以配合项目使用，所以感觉单独装的必要性不是很强。

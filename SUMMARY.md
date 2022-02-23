@@ -50,6 +50,7 @@
     * [DOM](front-end/web-standard/javascript/dom/README.md)
       * [Selection](chapters/Front-end/web-standard/javascript/dom/180322-selection.md)
       * [常用 DOM 操作](chapters/Front-end/web-standard/javascript/dom/180323-dom-api.md)
+      * [script 标签的几个属性](chapters/Front-end/web-standard/javascript/dom/220223-script-defer-async.md)
     * [Ecmascript](front-end/web-standard/javascript/ecmascript/README.md)
       * [this 关键字](chapters/Front-end/web-standard/javascript/ecmascript/180409-this解析.md)
       * [Event Loop](front-end/web-standard/javascript/ecmascript/event-loop.md)

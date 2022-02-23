@@ -76,7 +76,7 @@ var performance = {
 
         // 完成解析 DOM 树的时间，Document.readyState 变为 interactive，并将抛出 readystatechange 相关事件
         // 注意只是 DOM 树解析完成，表明可以操作DOM树了
-        // 但是这个时候 DOM 树不一定稳定，因为内部和外部的 script 脚本可能会操作 DOM 树
+        // 但是这个时候 DOM 树不一定稳定，因为内部和外部的 script 脚本可能会操作 DOM 树
         domInteractive: 1441112693093,
 
         // DOM 解析完成后，网页内资源加载开始的时间
@@ -101,7 +101,7 @@ var performance = {
 
 ## `domReady` vs `onload`
 
-`domReady`是jQuery提供的一个事件。我理解`domReady`是对`onreadystatechange`事件的封装。核心逻辑即提供一个页面DOM结构稳定之后的事件接口。 可以通过下列代码实现：
+`domReady`是jQuery提供的一个事件。我理解`domReady`是对`onreadystatechange`事件的封装。核心逻辑即提供一个页面DOM结构稳定之后的事件接口。 可以通过下列代码实现：
 
 ```javascript
 document.onreadystatechange = function(e) {
@@ -117,7 +117,7 @@ document.onreadystatechange = function(e) {
 }
 ```
 
-不过也有文章指出目前的实现存在一些问题，可以参考[DOM Ready 详解 - 张子秋的博客](http://www.cnblogs.com/zhangziqiu/archive/2011/06/27/DOMReady.html)。比如 setTimeout onload 'interactive' 的触发时机均存在不符合预期的情况。
+不过也有文章指出目前的实现存在一些问题，可以参考[DOM Ready 详解 - 张子秋的博客](http://www.cnblogs.com/zhangziqiu/archive/2011/06/27/DOMReady.html)。比如 setTimeout onload 'interactive' 的触发时机均存在不符合预期的情况。
 
 ## 几个时间点
 
@@ -127,7 +127,7 @@ document.onreadystatechange = function(e) {
 
 > The **DOMContentLoaded** event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading
 
-也就是说浏览器会在 HTML 加载完毕后就会触发该事件，不会等待样式表、图像，以及一些子框架（iframes）的加载完成。
+也就是说浏览器会在 HTML 加载完毕后就会触发该事件，不会等待样式表、图像，以及一些子框架（iframes）的加载完成。
 
 那什么叫"`the initial HTML document has been completely loaded and parsed`"呢？我们知道浏览器一般是逐行解析 document 的，所以我 parser 读完最后一行`</html>`标签时，HTML 也就加载完了。
 
@@ -144,23 +144,23 @@ Patrick Sexton在["What is domContentLoaded?"](https://varvy.com/performance/dom
 
 > Scripts with the defer attribute will prevent the DOMContentLoaded event from firing until the script has loaded and finished evaluating.
 
-那这里的样式表有可能阻塞哪里的js代码呢？
+那这里的样式表有可能阻塞哪里的js代码呢？
 
 这里就需要说说script标签了。参考规范对 [The script element](https://www.w3.org/TR/html5/semantics-scripting.html#list-of-scripts-that-will-execute-when-the-document-has-finished-parsing) 标签的定义，满足下图条件的script标签（主要就是defer脚本中的js代码），浏览器会把其中的代码放到一个叫做`list of scripts that will execute when the document has finished parsing`的队列当中。
 
 ![](<../../../../../assets/images/2018-07-27-13-39-50 (1).png>)
 
-根据事件循环的模型，我们知道 parser 解析 HTML 过程中的 js 代码都是同步执行的，异步执行的代码（ajax请求、定时器等）会被放进事件队列。当 HTML 解析结束后，事件循环会检查事件队列中是否有需要执行的代码，如果有就会开始执行。parser 解析完成后，浏览器会执行一个类似的操作。结合规范中 `Parsing HTML document` 过程对 `the end` 环节中一个步骤的定义：
+根据事件循环的模型，我们知道 parser 解析 HTML 过程中的 js 代码都是同步执行的，异步执行的代码（ajax请求、定时器等）会被放进事件队列。当 HTML 解析结束后，事件循环会检查事件队列中是否有需要执行的代码，如果有就会开始执行。parser 解析完成后，浏览器会执行一个类似的操作。结合规范中 `Parsing HTML document` 过程对 `the end` 环节中一个步骤的定义：
 
 > Spin the event loop until the first script in the list of scripts that will execute when the document has finished parsing has its "ready to be parser-executed" flag set and the parser’s Document has no style sheet that is blocking scripts.
 
-可知浏览器结束解析过程后，会检查上述的script队列，如果有待执行的script，则取出并执行。
+可知浏览器结束解析过程后，会检查上述的script队列，如果有待执行的script，则取出并执行。
 
-因此，样式表的加载是有可能阻塞所谓`list of scripts that will execute when the document has finished parsing`这个队列中的脚本的。
+因此，样式表的加载是有可能阻塞所谓`list of scripts that will execute when the document has finished parsing`这个队列中的脚本的。
 
-当DOMContentLoaded事件触发后，浏览器还会遍历下面两个队列中的script并执行（如果有）
+当 DOMContentLoaded 事件触发后，浏览器还会遍历下面两个队列中的script并执行（如果有）
 
-*   `set of scripts that will execute as soon as possible`
+*   `set of scripts that will execute as soon as possible`
 
     该队列中的代码会尽可能快的执行。如添加了async的脚本，会在加载完成后立刻执行。
 * `list of scripts that will execute in order as soon as possible`

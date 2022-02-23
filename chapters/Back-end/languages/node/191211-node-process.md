@@ -20,7 +20,7 @@
 
 ## child\_process
 
-![](../../../../assets/images/2019-12-11-15-58-51.png)
+![](/assets/images/2019-12-11-15-58-51.png)
 
 `child_process` 模块提供[四种方式](https://nodejs.org/api/child\_process.html#child\_process\_asynchronous\_process\_creation)用以创建子进程：
 

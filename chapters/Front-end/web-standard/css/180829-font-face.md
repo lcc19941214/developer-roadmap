@@ -17,7 +17,7 @@
 
 IE支持度不佳。
 
-![](<../../../../assets/images/2018-08-29-17-35-52 (1).png>)
+![](/assets/images/2018-08-29-17-35-52.png)
 
 ### [EOT](https://caniuse.com/#search=eot)
 
@@ -25,7 +25,7 @@ IE支持度不佳。
 
 对于eot的话，没有特殊要求就可以放弃治疗了。
 
-![](<../../../../assets/images/2018-08-29-17-36-10 (1).png>)
+![](/assets/images/2018-08-29-17-36-10.png)
 
 ### [WOFF](https://caniuse.com/#search=woff)
 
@@ -33,4 +33,4 @@ IE支持度不佳。
 
 低版本安卓和ios兼容情况较差。
 
-![](<../../../../assets/images/2018-08-29-17-44-17 (1).png>)
+![](/assets/images/2018-08-29-17-44-17.png)

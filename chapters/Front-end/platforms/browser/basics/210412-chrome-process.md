@@ -45,7 +45,7 @@ Chromium里有三种进程——浏览器、渲染器和插件。
 
 ![](/assets/images/2021-04-12-16-50-52.png)
 
-根据\[这篇文章]\(https://www.chromium.org/developers/design-documents/process-models​www.chromium.org，Chromium实际支持多种进程模型。
+根据[这篇文章](https://www.chromium.org/developers/design-documents/process-models​www.chromium.org)，Chromium实际支持多种进程模型。
 
 * 每个站点的实例创建一个新的进程
 * 每个站点创建一个新的进程（根据domain）
